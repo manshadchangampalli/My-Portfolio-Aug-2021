@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Navbar() {
+  const [isDark, setIsDark] = useState(false)
+  console.log(isDark);
   return (
+    // its the navbar here logo and the text
+    //  and darkmode icon also setted
+    // the items styled in home . scss 
+
+
     <div className="nav">
       <div className="logo">
         <h1>MN.</h1>
@@ -9,7 +16,7 @@ function Navbar() {
       <div className="text">
         <h3>UI DESIGNER & REACT JS DEV</h3>
       </div>
-      <div className="darkmode">
+      <div onClick={()=>setIsDark(!isDark)} className="darkmode">
         <svg
           width="50"
           height="67"

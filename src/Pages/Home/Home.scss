@@ -28,6 +28,11 @@
         }
         .darkmode{
             justify-self: end;
+            cursor: pointer;
+            transition: ease 1s;
+            &:hover{
+                transform: scale(1.1);
+            }
         }
 
     }
