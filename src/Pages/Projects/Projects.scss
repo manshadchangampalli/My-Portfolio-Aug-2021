@@ -1,0 +1,10 @@
+.Projects{
+    padding: 100px 0;
+    height: auto;
+    width: 100vw;
+    border-top: 2px solid #ccc;
+    background: var(--black);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2,434px);
+}

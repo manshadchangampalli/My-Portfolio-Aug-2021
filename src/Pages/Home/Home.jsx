@@ -1,7 +1,7 @@
 import React from "react";
-import HomeBackground from "../../Components/HomeBackground";
-import Navbar from "../../Components/Navbar";
-import UnderLine from "../../Components/UnderLine";
+import HomeBackground from "../../Components/Home/HomeBackground";
+import Navbar from "../../Components/Home/Navbar";
+import UnderLine from "../../Components/Home/UnderLine";
 import "./Home.scss";
 
 function Home() {
