@@ -1,10 +1,143 @@
-.Projects{
-    padding: 100px 0;
-    height: auto;
-    width: 100vw;
-    border-top: 2px solid #ccc;
-    background: var(--black);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2,434px);
+.Projects {
+  padding: 100px 100px;
+  height: auto;
+  overflow-x: hidden;
+  width: 100vw;
+  border-top: 2px solid #ccc;
+  background: var(--black);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 40px;
+  grid-template-rows: repeat(2, 434px);
+  .project {
+    width: 534px;
+    place-self: center;
+    height: 434px;
+    cursor: pointer;
+    position: relative;
+    .before {
+      display: grid;
+      padding: 10% 0;
+      grid-template-rows: 1fr 2fr 1fr;
+      justify-content: center;
+      color: var(--white);
+      h1 {
+        font-family: var(--exo_2);
+      }
+      ul {
+        display: grid;
+        align-self: center;
+        grid-template-rows: 1fr 1fr 3fr;
+        li{
+            font-size: 20px;
+            font-family: var(--exo_2);
+        }
+
+        .clr {
+          display: flex;
+          justify-content: space-evenly;
+          align-self: cente;
+          gap: 10px;
+          div {
+            width: 50px;
+            height: 50px;
+            background: #fff;
+            &::before{
+                
+            }
+          }
+        }
+      }
+      .buttons{
+          display: flex;
+          justify-content: space-between;
+          a{
+              color: var(--white);
+              background-color: rgb(25, 206, 25);
+              text-decoration: none;
+              padding: 10px 20px;
+              align-self: center;
+              font-family: var(--exo_2);
+              border-radius: 6px;
+          }
+          .view{
+              background-color: rgb(91, 91, 255);
+              color: var(--white);
+          }
+      }
+    }
+  }
+  .curtain.project {
+    background: url("../../Images/projects/curtainhouseforportfolio.png")
+      no-repeat center center;
+    background-size: cover;
+    &:hover .before {
+      opacity: 1;
+    }
+    .before {
+      backdrop-filter: blur(10px);
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      opacity: 0;
+      left: 0;
+      top: 0;
+    }
+  }
+  .navigate.project {
+    background: url("../../Images/projects/navigate\ for\ portfolio.png")
+      no-repeat center center;
+    background-size: cover;
+    &:hover .before {
+      opacity: 1;
+    }
+    .before {
+      backdrop-filter: blur(10px);
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      opacity: 0;
+      left: 0;
+      top: 0;
+    }
+  }
+  .food.project {
+    background: url("../../Images/projects/food\ for\ portfolio\ \(1\).png")
+      no-repeat center center;
+    background-size: cover;
+    &:hover .before {
+      opacity: 1;
+    }
+    .before {
+      backdrop-filter: blur(10px);
+
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      left: 0;
+      opacity: 0;
+      top: 0;
+    }
+  }
+  .portfolio.project {
+    background: url("../../Images/projects/old\ portfolio\ for\ portfolio.png")
+      no-repeat center center;
+    background-size: cover;
+    &:hover .before {
+      opacity: 1;
+    }
+    .before {
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      backdrop-filter: blur(10px);
+      left: 0;
+      opacity: 0;
+      top: 0;
+    }
+  }
 }
