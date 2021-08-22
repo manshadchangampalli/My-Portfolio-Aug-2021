@@ -1,5 +1,5 @@
 .footer{
-    height: 100vh;
+    height: auto;
     width: 100vw;
     background-color: var(--black);
     overflow-y: hidden;
@@ -7,6 +7,7 @@
     &-div{
         height: 80vh;
         width: 3000px;
+        margin-top: -200px;
         background-color: var(--black);
         overflow-X: hidden;
         overflow-y: hidden;
@@ -15,13 +16,22 @@
         border-top: solid 2px var(--underline);
         
     }
+    &-details{
+        background-color: white;
+        width: 350px;
+        height: 200px;
+        position: sticky;
+        top: 40%;
+        left: 50vw;
+        transform: translate(-50%,-50%);
+    }
     
     .socialmedia{
         width: 100vw;
         position: sticky;
         bottom: 0;
         left: 0;
-        border-top: 2px solid #fff;
+        border-top: 2px solid var(--underline);
         height: 20vh;
         overflow-x: hidden;
         color: white;

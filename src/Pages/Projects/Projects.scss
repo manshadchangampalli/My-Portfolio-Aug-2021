@@ -3,7 +3,7 @@
   height: auto;
   overflow-x: hidden;
   width: 100vw;
-  border-top: 2px solid #ccc;
+  border-top: 2px solid var(--underline);
   background: var(--black);
   display: grid;
   grid-template-columns: 1fr 1fr;
