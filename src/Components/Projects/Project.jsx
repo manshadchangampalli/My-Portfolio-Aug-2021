@@ -7,9 +7,9 @@ function Project(props) {
 
     <div  className={props.class+ " project" }>
             <div className="before">
-                <h1>CURTAIN HOUSE</h1>
+                <h1>{props.title}</h1>
                 <ul>
-                    <li >Its an simple website used Reactjs</li>
+                    <li >{props.p}</li>
                     <li>Design - FIGMA</li>
                     <li className="clr">
                         <p>Used Colors</p>

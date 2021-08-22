@@ -1,0 +1,39 @@
+.footer{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--black);
+    overflow-y: hidden;
+    overflow-X: scroll;
+    &-div{
+        height: 80vh;
+        width: 3000px;
+        background-color: var(--black);
+        overflow-X: hidden;
+        overflow-y: hidden;
+        background-position: center;
+        background-image: url("../../Images/question\ mark.svg");
+        border-top: solid 2px var(--underline);
+        
+    }
+    
+    .socialmedia{
+        width: 100vw;
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        border-top: 2px solid #fff;
+        height: 20vh;
+        overflow-x: hidden;
+        color: white;
+        display: grid;
+        place-content: center;
+        background: var(--black);
+        &-icons{
+            width: 400px;
+            height: 100px;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

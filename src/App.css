@@ -6,7 +6,7 @@
   --white:#fff;
   --surfe:#648AEB;
   --secondary:#7488BD;
-
+  --underline:#8596c241;
   --fredoka:'Fredoka One', cursive;
   --exo_2:'Exo 2', sans-serif;
 
@@ -18,4 +18,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+    overflow-x: hidden;
+}
